@@ -1,0 +1,10 @@
+21:02:26 **** Incremental Build of configuration Debug for project ConfigureGPIO_LL ****
+make -j12 all 
+arm-none-eabi-size  ConfigureGPIO_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1572	   7004	   1b5c	ConfigureGPIO_LL.elf
+Finished building: default.size.stdout
+ 
+
+21:02:27 Build Finished. 0 errors, 0 warnings. (took 522ms)
+

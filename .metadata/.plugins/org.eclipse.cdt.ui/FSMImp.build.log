@@ -1,0 +1,10 @@
+12:54:34 **** Incremental Build of configuration Debug for project FSMImp ****
+make -j12 all 
+arm-none-eabi-size  FSMImp.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     12	   1572	   7488	   1d40	FSMImp.elf
+Finished building: default.size.stdout
+ 
+
+12:54:34 Build Finished. 0 errors, 0 warnings. (took 339ms)
+

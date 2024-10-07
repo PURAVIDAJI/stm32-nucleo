@@ -1,0 +1,14 @@
+# Ignore build folders
+**/Debug/
+**/Release/
+**/build/
+
+# Ignore IDE-specific files
+.vscode/
+.settings/
+.project
+.cproject
+
+# Ignore OS-specific files
+Thumbs.db
+.DS_Store

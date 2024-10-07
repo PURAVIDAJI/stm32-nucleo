@@ -1,0 +1,10 @@
+17:07:29 **** Incremental Build of configuration Debug for project IntroductionToC ****
+make -j12 all 
+arm-none-eabi-size  IntroductionToC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4408	     12	   1572	   5992	   1768	IntroductionToC.elf
+Finished building: default.size.stdout
+ 
+
+17:07:30 Build Finished. 0 errors, 0 warnings. (took 547ms)
+

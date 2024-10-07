@@ -1,0 +1,37 @@
+2024-09-18 09:25:38,538 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:25:39,787 [INFO] WebApp:186 - Connection restablished
+2024-09-18 09:28:30,247 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:28:32,182 [INFO] WebApp:186 - Connection restablished
+2024-09-18 09:31:20,710 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:31:21,561 [INFO] WebApp:186 - Connection restablished
+2024-09-18 09:33:58,730 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:33:59,567 [INFO] WebApp:186 - Connection restablished
+2024-09-18 11:04:17,078 [INFO] WebApp:189 - Connection lost
+2024-09-18 11:04:18,183 [INFO] WebApp:186 - Connection restablished
+2024-09-18 12:09:24,844 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-09-18 12:09:26,148 [INFO] MainUpdater:2873 - connection check result : 10
+2024-09-18 12:09:26,179 [INFO] MainUpdater:2873 - connection check result : 10
+2024-09-18 12:09:26,642 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-09-18 12:09:26,658 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-09-18 12:09:26,667 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-09-18 12:09:26,668 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-09-18 12:09:26,679 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-09-18 12:09:26,680 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-09-18 12:09:26,683 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-09-18 12:09:26,689 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-09-18 12:09:26,700 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 208685272 Bytes (440401920)
+2024-09-18 12:09:26,703 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-09-18 12:09:26,704 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-09-18 12:09:26,704 [INFO] OpenFileManager:332 - Change cursor
+2024-09-18 12:09:26,771 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2024-09-18 12:09:26,772 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2024-09-18 12:09:27,172 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.4.0
+2024-09-18 12:09:27,203 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2024-09-18 12:09:27,260 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2024-09-18 12:09:27,373 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.11.0.0
+2024-09-18 12:09:27,579 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.2
+2024-09-18 12:09:27,604 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2024-09-18 12:09:27,630 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.0.0
+2024-09-18 12:09:27,651 [WARN] PackLoader:240 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.3.0
+2024-09-18 12:09:27,676 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.3.1.0
+2024-09-18 12:09:27,704 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
