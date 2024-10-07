@@ -1,42 +1,89 @@
-20:05:02 **** Incremental Build of configuration Debug for project UART_Communication_LL ****
+15:01:14 **** Incremental Build of configuration Debug for project FSMImplementation ****
 make -j12 all 
-arm-none-eabi-size  UART_Communication_LL.elf 
+arm-none-eabi-gcc "../Core/Src/FSM-1.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/FSM-1.d" -MT"Core/Src/FSM-1.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/FSM-1.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g0xx_hal_msp.d" -MT"Core/Src/stm32g0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g0xx_it.d" -MT"Core/Src/stm32g0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_it.o"
+../Core/Src/FSM-1.c: In function 'NextStateFunctionPointers':
+../Core/Src/FSM-1.c:65:17: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   65 | NextStatePointer=FSMTable[TableIndex].NextState[NextStateIndex];
+      |                 ^
+arm-none-eabi-gcc -o "FSMImplementation.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\FSMImplementation\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FSMImplementation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FSMImplementation.elf
+ 
+arm-none-eabi-size  FSMImplementation.elf 
+arm-none-eabi-objdump -h -S FSMImplementation.elf  > "FSMImplementation.list"
    text	   data	    bss	    dec	    hex	filename
-   7664	     84	   1900	   9648	   25b0	UART_Communication_LL.elf
+   6000	     12	   1572	   7584	   1da0	FSMImplementation.elf
 Finished building: default.size.stdout
  
-20:05:13 **** Incremental Build of configuration Debug for project UART_Communication_LL ****
+Finished building: FSMImplementation.list
+ 
+15:01:26 **** Incremental Build of configuration Debug for project FSMImplementation ****
 make -j12 all 
-arm-none-eabi-size  UART_Communication_LL.elf 
+arm-none-eabi-size  FSMImplementation.elf 
    text	   data	    bss	    dec	    hex	filename
-   7664	     84	   1900	   9648	   25b0	UART_Communication_LL.elf
+   6000	     12	   1572	   7584	   1da0	FSMImplementation.elf
 Finished building: default.size.stdout
  
-20:05:30 **** Incremental Build of configuration Debug for project UART_Communication_LL ****
+15:06:53 **** Incremental Build of configuration Debug for project FSMImplementation ****
 make -j12 all 
-arm-none-eabi-size  UART_Communication_LL.elf 
+arm-none-eabi-gcc "../Core/Src/FSM-1.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/FSM-1.d" -MT"Core/Src/FSM-1.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/FSM-1.o"
+../Core/Src/FSM-1.c: In function 'NextStateFunctionPointers':
+../Core/Src/FSM-1.c:65:17: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   65 | NextStatePointer=FSMTable[TableIndex].NextState[NextStateIndex];
+      |                 ^
+arm-none-eabi-gcc -o "FSMImplementation.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\FSMImplementation\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FSMImplementation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FSMImplementation.elf
+ 
+arm-none-eabi-size  FSMImplementation.elf 
+arm-none-eabi-objdump -h -S FSMImplementation.elf  > "FSMImplementation.list"
    text	   data	    bss	    dec	    hex	filename
-   7664	     84	   1900	   9648	   25b0	UART_Communication_LL.elf
+   5932	     12	   1572	   7516	   1d5c	FSMImplementation.elf
 Finished building: default.size.stdout
  
-20:06:41 **** Incremental Build of configuration Debug for project UART_Communication_LL ****
-make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32G071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DEXTERNAL_CLOCK_VALUE=48000 -DHSI_VALUE=16000000 -DLSI_VALUE=32000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -DINSTRUCTION_CACHE_ENABLE=1 -DDATA_CACHE_ENABLE=1 -c -I../Core/Inc -IC:/Users/ijk95/STM32Cube/Repository/STM32Cube_FW_G0_V1.6.2/Drivers/STM32G0xx_HAL_Driver/Inc -IC:/Users/ijk95/STM32Cube/Repository/STM32Cube_FW_G0_V1.6.2/Drivers/CMSIS/Device/ST/STM32G0xx/Include -IC:/Users/ijk95/STM32Cube/Repository/STM32Cube_FW_G0_V1.6.2/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "UART_Communication_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\UART_Communication\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_Communication_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: UART_Communication_LL.elf
+Finished building: FSMImplementation.list
  
-arm-none-eabi-size  UART_Communication_LL.elf 
-arm-none-eabi-objdump -h -S UART_Communication_LL.elf  > "UART_Communication_LL.list"
+15:07:50 **** Incremental Build of configuration Debug for project FSMImplementation ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/FSM-1.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/FSM-1.d" -MT"Core/Src/FSM-1.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/FSM-1.o"
+../Core/Src/FSM-1.c: In function 'NextStateFunctionPointers':
+../Core/Src/FSM-1.c:65:17: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   65 | NextStatePointer=FSMTable[TableIndex].NextState[NextStateIndex];
+      |                 ^
+arm-none-eabi-gcc -o "FSMImplementation.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\FSMImplementation\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FSMImplementation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FSMImplementation.elf
+ 
+arm-none-eabi-size  FSMImplementation.elf 
+arm-none-eabi-objdump -h -S FSMImplementation.elf  > "FSMImplementation.list"
    text	   data	    bss	    dec	    hex	filename
-   7668	     84	   1900	   9652	   25b4	UART_Communication_LL.elf
+   6000	     12	   1572	   7584	   1da0	FSMImplementation.elf
 Finished building: default.size.stdout
  
-Finished building: UART_Communication_LL.list
+Finished building: FSMImplementation.list
  
-20:06:59 **** Incremental Build of configuration Debug for project UART_Communication_LL ****
+15:27:06 **** Incremental Build of configuration Debug for project FSMImplementation ****
 make -j12 all 
-arm-none-eabi-size  UART_Communication_LL.elf 
+arm-none-eabi-gcc "../Core/Src/FSM-1.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/FSM-1.d" -MT"Core/Src/FSM-1.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/FSM-1.o"
+../Core/Src/FSM-1.c: In function 'NextStateFunctionPointers':
+../Core/Src/FSM-1.c:65:17: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   65 | NextStatePointer=FSMTable[TableIndex].NextState[NextStateIndex];
+      |                 ^
+../Core/Src/FSM-1.c: In function 'OutputFunction':
+../Core/Src/FSM-1.c:150:5: warning: enumeration value 'S1_Press' not handled in switch [-Wswitch]
+  150 |     switch (FSM->CurrentState) {
+      |     ^~~~~~
+../Core/Src/FSM-1.c:150:5: warning: enumeration value 'S2_Press' not handled in switch [-Wswitch]
+../Core/Src/FSM-1.c:150:5: warning: enumeration value 'S3_Press' not handled in switch [-Wswitch]
+../Core/Src/FSM-1.c:150:5: warning: enumeration value 'S4_Press' not handled in switch [-Wswitch]
+arm-none-eabi-gcc -o "FSMImplementation.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\FSMImplementation\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FSMImplementation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FSMImplementation.elf
+ 
+arm-none-eabi-size  FSMImplementation.elf 
+arm-none-eabi-objdump -h -S FSMImplementation.elf  > "FSMImplementation.list"
    text	   data	    bss	    dec	    hex	filename
-   7668	     84	   1900	   9652	   25b4	UART_Communication_LL.elf
+   5984	     12	   1572	   7568	   1d90	FSMImplementation.elf
 Finished building: default.size.stdout
+ 
+Finished building: FSMImplementation.list
  

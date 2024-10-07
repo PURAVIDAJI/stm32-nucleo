@@ -106,14 +106,14 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	  //fsm.CurrentInput = (HAL_GPIO_ReadPin(Button_GPIO_Port, Button_Pin) == GPIO_PIN_SET) ? INACTIVE : ACTIVE;
+	  fsm.CurrentInput = (HAL_GPIO_ReadPin(Button_GPIO_Port, Button_Pin) == GPIO_PIN_SET) ? INACTIVE : ACTIVE;
 
 	  OutputFunction(&fsm);
 
 	      // Determine the next state based on the current input and current state
-	  //fsm.CurrentState = NextStateFunction(&fsm);
+	  fsm.CurrentState = NextStateFunction(&fsm);
 
-	  //HAL_Delay(5);
+	  HAL_Delay(5);
   }
 
   /* USER CODE END 3 */
@@ -179,7 +179,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : Button_Pin */
   GPIO_InitStruct.Pin = Button_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(Button_GPIO_Port, &GPIO_InitStruct);
 
@@ -189,10 +189,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(Grn_LED_GPIO_Port, &GPIO_InitStruct);
-
-  /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
