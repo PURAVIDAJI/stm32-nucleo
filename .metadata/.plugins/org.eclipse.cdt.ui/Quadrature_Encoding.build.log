@@ -1,0 +1,10 @@
+17:02:15 **** Incremental Build of configuration Debug for project Quadrature_Encoding ****
+make -j12 all 
+arm-none-eabi-size  Quadrature_Encoding.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5908	     12	   1572	   7492	   1d44	Quadrature_Encoding.elf
+Finished building: default.size.stdout
+ 
+
+17:02:15 Build Finished. 0 errors, 0 warnings. (took 326ms)
+

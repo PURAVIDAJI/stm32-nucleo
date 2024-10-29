@@ -1,0 +1,10 @@
+16:14:25 **** Incremental Build of configuration Debug for project TimerCapture ****
+make -j12 all 
+arm-none-eabi-size  TimerCapture.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9636	     12	   1660	  11308	   2c2c	TimerCapture.elf
+Finished building: default.size.stdout
+ 
+
+16:14:26 Build Finished. 0 errors, 0 warnings. (took 454ms)
+

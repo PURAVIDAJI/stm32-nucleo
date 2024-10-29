@@ -142,58 +142,33 @@ switch (FSM->CurrentState)
 void OutputFunction(FSMType *FSM)
 {
 uint16_t max_counter = 0;
-if (FSM->CurrentState == S1_Press) {
-    max_counter = f1; // S1_Press에서 동작
-} else if (FSM->CurrentState == S1_Release || FSM->CurrentState == S2_Release ||
-           FSM->CurrentState == S3_Release || FSM->CurrentState == S4_Release) {
-    // Release 상태에서만 동작
-    switch (FSM->CurrentState) {
-    case S1_Release:
-        max_counter = f1; // 1Hz
-        break;
-    case S2_Release:
-        max_counter = f2; // 2Hz
-        break;
-    case S3_Release:
-        max_counter = f3; // 5Hz
-        break;
-    case S4_Release:
-        max_counter = f4; // 10Hz
-        break;
-    }
-} else {
-    // Press 상태에서는 동작하지 않음 (S1_Press는 처음 동작을 위해 예외)
-    return;
+
+switch (FSM->CurrentState) {
+case S1_Press:
+max_counter =f1; //1Hz
+break;
+case S1_Release:
+max_counter =f1;
+break;
+case S2_Press:
+max_counter =f2;
+break;
+case S2_Release:
+max_counter =f2;
+break;
+case S3_Press:
+max_counter =f3;
+break;
+case S3_Release:
+max_counter =f3;
+break;
+case S4_Press:
+max_counter =f4;
+break;
+case S4_Release:
+max_counter =f4;
+break;
 }
-
-
-
-//switch (FSM->CurrentState) {
-//case S1_Press:
-//max_counter =f1; //1Hz
-//break;
-//case S1_Release:
-//max_counter =f1;
-//break;
-//case S2_Press:
-//max_counter =f2;
-//break;
-//case S2_Release:
-//max_counter =f2;
-//break;
-//case S3_Press:
-//max_counter =f3;
-//break;
-//case S3_Release:
-//max_counter =f3;
-//break;
-//case S4_Press:
-//max_counter =f4;
-//break;
-//case S4_Release:
-//max_counter =f4;
-//break;
-//}
 FSM->StateCounter++; // increase
 if (FSM->StateCounter >= max_counter) {
 HAL_GPIO_TogglePin(Grn_LED_GPIO_Port, Grn_LED_Pin); // LED 토글
