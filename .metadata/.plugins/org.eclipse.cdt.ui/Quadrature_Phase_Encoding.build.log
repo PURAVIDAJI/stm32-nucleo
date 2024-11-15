@@ -1,0 +1,18 @@
+22:45:04 **** Build of configuration Debug for project Quadrature_Phase_Encoding ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/FSM.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/FSM.d" -MT"Core/Src/FSM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/FSM.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Quadrature_Phase_Encoding.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\Quadrature_Phase_Encoding\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Quadrature_Phase_Encoding.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Quadrature_Phase_Encoding.elf
+ 
+arm-none-eabi-size  Quadrature_Phase_Encoding.elf 
+arm-none-eabi-objdump -h -S Quadrature_Phase_Encoding.elf  > "Quadrature_Phase_Encoding.list"
+   text	   data	    bss	    dec	    hex	filename
+  18756	    104	   2144	  21004	   520c	Quadrature_Phase_Encoding.elf
+Finished building: default.size.stdout
+ 
+Finished building: Quadrature_Phase_Encoding.list
+ 
+
+22:45:06 Build Finished. 0 errors, 0 warnings. (took 1s.581ms)
+

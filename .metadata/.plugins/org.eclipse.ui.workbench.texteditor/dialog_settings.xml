@@ -6,30 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="1"/>
+		<item key="selection" value="ture"/>
 		<list key="findhistory">
-			<item value="1"/>
-			<item value="IRQ"/>
-			<item value="Enable"/>
-			<item value="EnableIRQ"/>
-			<item value="HAL"/>
-			<item value="PIN_6"/>
-			<item value="GPIO"/>
-			<item value="pin_6"/>
-			<item value="captureCallback"/>
-			<item value="captureCall"/>
-			<item value="4_15"/>
-			<item value="13"/>
-			<item value="ext"/>
-			<item value="ex"/>
+			<item value="ture"/>
+			<item value="HAL_RCC_clock"/>
+			<item value="HAL_RCC"/>
+			<item value="SPI"/>
+			<item value="SPISend"/>
+			<item value="spi"/>
+			<item value="HAL_TIM_PeriodE"/>
+			<item value="USER CODE BEGIN P"/>
+			<item value="USER CODE BEGIN "/>
+			<item value="USER CODE"/>
+			<item value="user code begin private"/>
+			<item value="HAL_TIM_PeriodElapsedCallback"/>
+			<item value="PeriodElapsed"/>
+			<item value="TIM3"/>
 			<item value="EXTI"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="433"/>
-		<item key="DIALOG_Y_ORIGIN" value="635"/>
+		<item key="DIALOG_X_ORIGIN" value="-213"/>
+		<item key="DIALOG_Y_ORIGIN" value="489"/>
 		<item key="DIALOG_WIDTH" value="369"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

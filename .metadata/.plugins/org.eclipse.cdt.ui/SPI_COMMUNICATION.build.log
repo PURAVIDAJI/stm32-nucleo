@@ -1,0 +1,16 @@
+22:45:06 **** Incremental Build of configuration Debug for project SPI_COMMUNICATION ****
+make -j12 all 
+arm-none-eabi-gcc -o "SPI_COMMUNICATION.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\SPI_COMMUNICATION\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_COMMUNICATION.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPI_COMMUNICATION.elf
+ 
+arm-none-eabi-size  SPI_COMMUNICATION.elf 
+arm-none-eabi-objdump -h -S SPI_COMMUNICATION.elf  > "SPI_COMMUNICATION.list"
+   text	   data	    bss	    dec	    hex	filename
+   5648	     12	   1668	   7328	   1ca0	SPI_COMMUNICATION.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPI_COMMUNICATION.list
+ 
+
+22:45:07 Build Finished. 0 errors, 0 warnings. (took 725ms)
+

@@ -1,0 +1,16 @@
+22:45:00 **** Build of configuration Debug for project FSMImplementation_IE ****
+make -j12 all 
+arm-none-eabi-gcc -o "FSMImplementation_IE.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\FSMImplementation_IE\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FSMImplementation_IE.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FSMImplementation_IE.elf
+ 
+arm-none-eabi-size  FSMImplementation_IE.elf 
+arm-none-eabi-objdump -h -S FSMImplementation_IE.elf  > "FSMImplementation_IE.list"
+   text	   data	    bss	    dec	    hex	filename
+   5872	     12	   1572	   7456	   1d20	FSMImplementation_IE.elf
+Finished building: default.size.stdout
+ 
+Finished building: FSMImplementation_IE.list
+ 
+
+22:45:01 Build Finished. 0 errors, 0 warnings. (took 843ms)
+
