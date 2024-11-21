@@ -1,20 +1,253 @@
-14:51:29 **** Incremental Build of configuration Debug for project ADCPartB ****
+14:22:15 **** Incremental Build of configuration Debug for project SPI ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32g0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g0xx_hal_msp.d" -MT"Core/Src/stm32g0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32g0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g0xx_it.d" -MT"Core/Src/stm32g0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32g0xx_it.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:131:11: warning: unused variable 'OutputBuffer' [-Wunused-variable]
-  131 |   uint8_t OutputBuffer[32];
-      |           ^~~~~~~~~~~~
-arm-none-eabi-gcc -o "ADCPartB.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\ADCPartB\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADCPartB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ADCPartB.elf
- 
-arm-none-eabi-size  ADCPartB.elf 
-arm-none-eabi-objdump -h -S ADCPartB.elf  > "ADCPartB.list"
+arm-none-eabi-size  SPI.elf 
    text	   data	    bss	    dec	    hex	filename
-  19652	     12	   1916	  21580	   544c	ADCPartB.elf
+  10776	     12	   1668	  12456	   30a8	SPI.elf
 Finished building: default.size.stdout
  
-Finished building: ADCPartB.list
+14:22:48 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:22:53 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:23:47 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:23:51 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:24:37 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:24:41 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:25:05 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:30:50 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:33:03 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:36:22 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPI.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\SPI\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPI.elf
+ 
+arm-none-eabi-size  SPI.elf 
+arm-none-eabi-objdump -h -S SPI.elf  > "SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPI.list
+ 
+14:37:42 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:37:45 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:44:32 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPI.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\SPI\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPI.elf
+ 
+arm-none-eabi-size  SPI.elf 
+arm-none-eabi-objdump -h -S SPI.elf  > "SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPI.list
+ 
+14:44:44 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+14:46:39 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:03:36 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:04:07 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:09:38 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:10:04 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:11:03 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:21:20 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:21:24 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:21:30 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:21:36 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:40:27 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:40:37 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:40:48 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:43:19 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+15:43:31 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+10:36:28 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/M95.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/M95.d" -MT"Core/Src/M95.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/M95.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G071xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPI.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\ijk95\STM32CubeIDE\workspace_1.16.0\SPI\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPI.elf
+ 
+arm-none-eabi-size  SPI.elf 
+arm-none-eabi-objdump -h -S SPI.elf  > "SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPI.list
+ 
+10:38:15 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
+ 
+10:38:19 **** Incremental Build of configuration Debug for project SPI ****
+make -j12 all 
+arm-none-eabi-size  SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10776	     12	   1668	  12456	   30a8	SPI.elf
+Finished building: default.size.stdout
  

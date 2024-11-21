@@ -1,0 +1,74 @@
+#include "M95.h"
+void EnableChipSelectM95(uint8_t M95Type)
+{
+}
+void DisableChipSelectM95(uint8_t M95Type)
+{
+}
+void DisableWriteProtectM95(void)
+{
+}
+void DisableHoldM95(void)
+{
+}
+
+
+/**
+* @brief enable the write prior to write instruction(WRITE, WRSR, WRID, LID).
+* @retval Contents of status register as uint8_t type.
+* @param M95Type: integer that indicates which memory
+* device is selected (distinguished by memory size).
+*
+* The accepted values are:
+* #define M95040 0
+* #define M95256 1
+* #define M95M04 2
+*/
+
+void WriteEnableM95(uint8_t M95Type)
+{
+#define SPI_WREN 0x06
+}
+void WriteStatusRegisterM95(uint8_t M95Type, uint8_t WriteData)
+
+
+
+{
+}
+
+
+/**
+* @brief Read from the status register.
+* @retval Contents of status register as uint8_t type.
+* @param M95Type: integer that indicates which memory
+* device is selected (distinguished by memory size).
+*
+* The accepted values are:
+* #define M95040 0
+* #define M95256 1
+* #define M95M04 2
+*/
+
+uint8_t ReadStatusRegisterM95(uint8_t M95Type)
+{
+	uint8_t Command =SPI_RDSR;
+	uint8_t ReturnValue =0;
+	//Enable Chip select
+
+	EnableChipSelectM95(M95Type);
+	//Send Command and receive the data
+	SPISendByte(Command);
+	ReturnValue =SPIReceiveByte();
+	//Disable chip select.
+	DisableChipSelectM95(M95Type);
+uint8_t ReturnValue = 0;
+return ReturnValue;
+}
+void WriteByteM95(uint8_t M95Type, uint32_t Address, uint8_t WriteData)
+{
+}
+uint8_t ReadByteM95(uint8_t M95Type, uint32_t Address)
+{
+uint8_t ReturnValue = 0;
+return ReturnValue;
+}

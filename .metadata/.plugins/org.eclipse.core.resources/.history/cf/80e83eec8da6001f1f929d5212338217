@@ -1,0 +1,82 @@
+#include "M95.h"
+void EnableChipSelectM95(uint8_t M95Type)
+{
+	switch (M95Type){
+	case 0:
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,GPIO_PIN_RESET);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7,GPIO_PIN_RESET);
+		break;
+	case 2:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0,GPIO_PIN_RESET);
+		break;
+	}
+}
+void DisableChipSelectM95(uint8_t M95Type)
+{
+}
+void DisableWriteProtectM95(void)
+{
+}
+void DisableHoldM95(void)
+{
+}
+
+
+
+
+void WriteEnableM95(uint8_t M95Type)
+{
+	uint8_t Command =SPI_WREN;
+
+	//Enable Chip select
+	EnableChipSelectM95(M95Type);
+	//Send Command
+	SPISendByte(Command);
+	//Disable chip select.
+	DisableChipSelectM95(M95Type);
+
+
+}
+void WriteStatusRegisterM95(uint8_t M95Type, uint8_t WriteData)
+{
+	uint8_t Command =SPI_WRSR;
+
+		//Enable Chip select
+		EnableChipSelectM95(M95Type);
+		//Send Command and write
+		SPISendByte(Command);
+		 SPISendByte(WriteData);
+
+		//Disable chip select.
+		DisableChipSelectM95(M95Type);
+
+
+}
+
+
+uint8_t ReadStatusRegisterM95(uint8_t M95Type)
+{
+	uint8_t Command =SPI_RDSR;
+	uint8_t ReturnValue =0;
+	//Enable Chip select
+	EnableChipSelectM95(M95Type);
+
+	//Send Command and receive the data
+	SPISendByte(Command);
+	ReturnValue =SPIReceiveByte();
+
+	//Disable chip select.
+	DisableChipSelectM95(M95Type);
+
+return ReturnValue;
+}
+void WriteByteM95(uint8_t M95Type, uint32_t Address, uint8_t WriteData)
+{
+}
+uint8_t ReadByteM95(uint8_t M95Type, uint32_t Address)
+{
+uint8_t ReturnValue = 0;
+return ReturnValue;
+}
