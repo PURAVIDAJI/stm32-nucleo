@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Final/Core/Src/MemoryAccess.c&apos; to &apos;memoryAccess.c&apos;" description="Rename resource &apos;MemoryAccess.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/MemoryAccess.c" name="memoryAccess.c" stamp="1733840167333" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Final/Core/Inc/memoryAccess.c&apos; to &apos;memoryAccess.h&apos;" description="Rename resource &apos;memoryAccess.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/memoryAccess.c" name="memoryAccess.h" stamp="1733840181400" updateReferences="true"/>
+</session>

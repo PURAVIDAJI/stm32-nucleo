@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Final/Core/Src/memoryAccess.c&apos;" deleteContents="false" description="Delete resource &apos;Final/Core/Src/memoryAccess.c&apos;" element1="/Final/Core/Src/memoryAccess.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1733840215039"/>&#x0A;<refactoring comment="Delete resource &apos;Final/Core/Inc/memoryAccess.h&apos;" deleteContents="false" description="Delete resource &apos;Final/Core/Inc/memoryAccess.h&apos;" element1="/Final/Core/Inc/memoryAccess.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1733840779101"/>
+</session>

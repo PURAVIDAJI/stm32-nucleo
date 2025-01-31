@@ -20,8 +20,8 @@
 #include "main.h"
 #include "spi.h"
 #include "gpio.h"
-#include "M95.h"
 
+#include "M95.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

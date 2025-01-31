@@ -6,30 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="USER CODE BEGIN 4"/>
 		<list key="findhistory">
-			<item value="tpye"/>
-			<item value="ture"/>
-			<item value="HAL_RCC_clock"/>
-			<item value="HAL_RCC"/>
-			<item value="SPI"/>
-			<item value="SPISend"/>
-			<item value="spi"/>
-			<item value="HAL_TIM_PeriodE"/>
-			<item value="USER CODE BEGIN P"/>
-			<item value="USER CODE BEGIN "/>
-			<item value="USER CODE"/>
-			<item value="user code begin private"/>
-			<item value="HAL_TIM_PeriodElapsedCallback"/>
-			<item value="PeriodElapsed"/>
-			<item value="TIM3"/>
+			<item value="user code begin 4"/>
+			<item value="user code begin4"/>
+			<item value="usercodebegin4"/>
+			<item value="HAL_I2C_Master_Rece"/>
+			<item value="HAL_I2C_Master_Recieve"/>
+			<item value="HAL_I2C_Master"/>
+			<item value="HAL_StatusTypeDef HAL_i2c_Master_trans"/>
+			<item value="HAL_StatusTypeDef HAL_i2c_Master"/>
+			<item value="HAL_StatusTypeDef HAL_i2c"/>
+			<item value="HAL_StatusTypeDef HAL_Master_Trans"/>
+			<item value="HAL_StatusTypeDef HAL_I2C_IsDevice"/>
+			<item value="while (HAL_I2C_Is"/>
+			<item value="HAL_StatusTypeDef HAL_I2C_Master"/>
+			<item value="HAL_StatusTypeDef HAL_I2C"/>
+			<item value="HAL_Status"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-299"/>
-		<item key="DIALOG_Y_ORIGIN" value="610"/>
+		<item key="DIALOG_X_ORIGIN" value="-432"/>
+		<item key="DIALOG_Y_ORIGIN" value="669"/>
 		<item key="DIALOG_WIDTH" value="369"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
